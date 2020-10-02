@@ -1,6 +1,8 @@
 % gcloud, compute, ssh
 
 # gcloud ssh tunnnel
-gcloud compute ssh instance --tunnel-through-iap -- -N -L vm-port:localhost:local-port
+gcloud compute ssh <instance> --tunnel-through-iap -- -N -L <vm_port>:localhost:<local_port>
 ; todo 引数を渡せるようにする
-; gcloud compute instances list
+$ instance
+$ vm_port
+$ local_port
