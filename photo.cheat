@@ -1,0 +1,25 @@
+% png, svg
+
+# png to svg
+
+convert -alpha remove <png_file> pgm: \
+| mkbitmap -f 32 -t 0.4 - -o - \
+| potrace --svg -o <svg_file>
+
+$ png_file
+$ svg_file
+
+% jpg, svg
+# jpg to svg
+
+tmp_file=$(mktemp)
+mogrify -write ${tmp_file} -format png <jpg_file>
+
+convert -alpha remove ${tmp_file} pgm: \
+| mkbitmap -f 32 -t 0.4 - -o - \
+| potrace --svg -o <svg_file>
+
+rm ${tmp_file}
+
+$ jpg_file
+$ svg_file
