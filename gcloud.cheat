@@ -1,5 +1,5 @@
-% gcloud, gcp
+% gcloud, compute, ssh
 
 # gcloud ssh tunnnel
-
-$ ssh: gcloud compute ssh vm-name --tunnel-through-iap -- -N -L vm-port:localhost:local-port
+gcloud compute ssh <instance> --tunnel-through-iap -- -N -L vm-port:localhost:local-port
+$ gcloud compute instances list
