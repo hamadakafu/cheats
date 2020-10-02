@@ -10,6 +10,7 @@ $ png_file
 $ svg_file
 
 % jpg, svg
+
 # jpg to svg
 
 tmp_file=$(mktemp)
