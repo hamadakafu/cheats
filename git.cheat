@@ -1,0 +1,10 @@
+% git
+
+# git, tag, delete, local
+git tag -d <tag>
+$ tag: git tag
+
+# git, tag, delete, remote
+git push --delete <remote> <tag>
+$ remote: git remote
+$ tag: git ls-remote --tags <remote>
