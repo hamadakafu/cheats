@@ -7,4 +7,4 @@ $ tag: git tag
 # git, tag, delete, remote
 git push --delete <remote> <tag>
 $ remote: git remote
-$ tag: git ls-remote --tags <remote>
+$ tag: git ls-remote --tags <remote> | awk '{print $1}'
