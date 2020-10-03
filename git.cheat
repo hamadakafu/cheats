@@ -8,3 +8,8 @@ $ tag: git tag
 git push --delete <remote> <tag>
 $ remote: git remote
 $ tag: git ls-remote --tags <remote> | awk '{print $2}'
+
+# git, branch, delete, remote
+git push <remote> --delete <branch>
+$ remote: git remote
+$ branch: git branch
