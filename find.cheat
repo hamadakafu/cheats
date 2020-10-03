@@ -1,0 +1,6 @@
+% find, fd
+
+# find, regex
+fd --hidden --no-ignore '<regex>'
+$ regex: echo '.*\.jar'
+
