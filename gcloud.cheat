@@ -6,7 +6,8 @@ $ instance: gcloud compute instances list --format="value(name)"
 $ vm_port
 $ local_port
 
-# gcloud ssh
+% gcloud, ssh
+# gcloud ssh tunnnel
 gcloud compute ssh <instance> --tunnel-through-iap
 $ instance: gcloud compute instances list --format="value(name)"
 
