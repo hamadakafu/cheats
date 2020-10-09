@@ -13,3 +13,6 @@ $ tag: git ls-remote --tags <remote> | awk '{print $2}'
 git push <remote> --delete <branch>
 $ remote: git remote
 $ branch: git branch
+
+# git, hash
+git rev-parse HEAD
