@@ -1,0 +1,5 @@
+% docker, mysql
+
+# docker, mysql
+docker run -i -t -p <host_port>:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql
+$ instance
