@@ -2,10 +2,10 @@
 
 # docker, mysql, empty
 docker run --rm -i -t -p <host_port>:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql
-$ host_port
+$ host_port:
 
-% docker, run, redis
+% docker, run
 
 # docker, run, redis
 docker run --rm -i -t -p <host_port>:6379 redis
-$ host_port
+$ host_port:
