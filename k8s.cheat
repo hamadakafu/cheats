@@ -1,0 +1,5 @@
+% kubernetes, k8s
+
+# dry-run create cronjob
+kubernetes create cronjob --image ubuntu --schedule '0 * * * *' --output yaml <dry-run>
+$ dry-run: echo 'false true' | tr ' ' '\n' --- --map "[[ $0 == t* ]] && echo --dry-run"
