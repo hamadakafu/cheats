@@ -1,5 +1,17 @@
 % kubernetes, k8s
 
-# dry-run create cronjob
-kubernetes create cronjob --image ubuntu --schedule '0 * * * *' --output yaml <dry-run>
-$ dry-run: echo 'false true' | tr ' ' '\n' --- --map "[[ $0 == t* ]] && echo --dry-run"
+# k8s create cronjob
+
+kubectl create cronjob --image ubuntu --schedule '0 * * * *' --output yaml <dry-run>
+
+$ dry-run: echo 'true false' | tr ' ' '\n' --- --map "[[ $0 == t* ]] && echo --dry-run"
+
+
+% kubernetes, k8s
+
+# k8s run debug pod
+kubectl run --rm --restart=Never -i -t --image <image> <pod-name> -- bash
+
+$ image
+$ pod-name
+
