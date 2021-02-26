@@ -2,7 +2,7 @@
 
 # k8s create cronjob
 
-kubectl create cronjob --image ubuntu --schedule '0 * * * *' --output yaml <dry-run>
+kubectl create cronjob --image ubuntu --schedule '0 * * * *' --output yaml <dry-run> sample
 
 $ dry-run: echo 'true false' | tr ' ' '\n' --- --map "[[ $0 == t* ]] && echo --dry-run"
 
