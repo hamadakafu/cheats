@@ -1,0 +1,6 @@
+% npx, react, typescript
+
+# npx create-react-app using typescript
+
+npx create-react-app <project_name> --template typescript
+
