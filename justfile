@@ -5,5 +5,5 @@ git-update:
   navi repo add hamadakafu/cheats
 
 navi-update:
-  navi repo add hamadakafu/cheats
+  navi repo add git@github.com:hamadakafu/cheats.git
 
