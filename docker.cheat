@@ -9,3 +9,9 @@ docker run --rm -i -t -p <host_port>:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=true mys
 # docker, run, redis
 docker run --rm -i -t -p <host_port>:6379 redis
 
+
+% docker, jupyter, notebook
+
+# docker, run, jupyter
+
+docker run -v `pwd`:/home/jovyan/work -p <host_port>:8888 --name jupyter jupyter/scipy-notebook
