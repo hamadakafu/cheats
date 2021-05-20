@@ -1,0 +1,54 @@
+% ip, netns, add
+
+# ip netns add, create network namespace
+
+ip netns add <namespace_name>
+
+
+
+% ip, link
+
+# ip link set up, Up eth device
+
+ip link set <device> up
+
+
+
+% ip, link, add, veth
+
+# ip link add veth, Create new veth
+
+ip link add name <left_NIC> type veth peer name <right_NIC>
+
+
+
+% ip, link, add, bridge
+
+# ip link add bridge, Create new bridge
+
+ip link add name <bridge_name> type bridge
+
+
+
+% ip, link, set, NIC, netns
+
+# ip link set netns, Set NIC to network namespace
+
+ip link set <peer_NIC> netns <namespace>
+
+
+
+% ip, link, set, NIC, bridge
+
+# ip link set dev bridge, Set NIC to bridge
+
+ip link set dev <peer_NIC> master <bridge_name>
+
+
+
+% ip, addr, add
+
+# ip addr add, Attach addr to NIC
+
+ip addr add <network_cidr> dev <NIC>
+
