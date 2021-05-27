@@ -1,0 +1,7 @@
+% import, screenshot
+
+# import, screenshot
+fd --hidden --no-ignore '<regex>'
+import '<filename>'
+$ filename:
+
