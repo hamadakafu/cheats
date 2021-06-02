@@ -4,14 +4,21 @@
 docker run --rm -i -t -p <host_port>:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql
 
 
-% docker, run
+% docker, run, redis
 
 # docker, run, redis
 docker run --rm -i -t -p <host_port>:6379 redis
 
 
-% docker, jupyter, notebook
+% docker, run, jupyter, notebook
 
-# docker, run, jupyter
+# docker, run, jupyter, notebook
 
-docker run -v `pwd`:/home/jovyan/work -p <host_port>:8888 --name jupyter jupyter/scipy-notebook
+docker run --rm -v `pwd`:/home/jovyan/work -p <host_port>:8888 --name jupyter jupyter/scipy-notebook
+
+
+% docker, run, sagemath
+
+# docker, run, sagemath
+docker run --rm -i -t -v `pwd`:/home/sage --name sage sagemath/sagemath:develop /bin/bash
+
