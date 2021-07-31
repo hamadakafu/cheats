@@ -20,5 +20,6 @@ docker run --rm -v `pwd`:/home/jovyan/work -p <host_port>:8888 --name jupyter ju
 % docker, run, sagemath
 
 # docker, run, sagemath
-docker run --rm -i -t -v `pwd`:/home/sage --name sage sagemath/sagemath:develop /bin/bash
+docker run -i -t -v `pwd`:/src -p 8888:8888 sagemath/sagemath:latest sage-jupyter
+
 
