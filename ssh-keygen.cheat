@@ -1,0 +1,4 @@
+% ssh-keygen, format
+
+# ssh-keygen openssl pubkey -> pem format
+ssh-keygen -f <file> -e -m pem
