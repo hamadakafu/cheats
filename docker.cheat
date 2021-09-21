@@ -14,7 +14,8 @@ docker run --rm -i -t -p <host_port>:6379 redis
 
 # docker, run, jupyter, notebook
 
-docker run --rm -v `pwd`:/home/jovyan/work -p <host_port>:8888 --name jupyter jupyter/scipy-notebook
+docker run --rm --user root -e GRANT_SUDO=yes -v `pwd`:/home/jovyan/work -p <host_port>:8888 --name jupyter jupyter/scipy-notebook
+
 
 
 % docker, run, sagemath
