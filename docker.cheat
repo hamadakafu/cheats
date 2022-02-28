@@ -3,12 +3,15 @@
 # docker, mysql, empty
 docker run --rm -i -t -p <host_port>:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql
 
+% docker, run, postgres
+
+# docker, postgres
+docker run --rm -i -t -p <host_port>:5432 -e POSTGRES_PASSWORD=password postgres
 
 % docker, run, redis
 
 # docker, run, redis
 docker run --rm -i -t -p <host_port>:6379 redis
-
 
 % docker, run, jupyter, notebook
 
@@ -16,11 +19,8 @@ docker run --rm -i -t -p <host_port>:6379 redis
 
 docker run --rm --user root -e GRANT_SUDO=yes -v `pwd`:/home/jovyan/work -p <host_port>:8888 --name jupyter jupyter/scipy-notebook
 
-
-
 % docker, run, sagemath
 
 # docker, run, sagemath
 docker run --rm -i -t -v `pwd`:/src -p 8888:8888 sagemath/sagemath:latest sage-jupyter
-
 
